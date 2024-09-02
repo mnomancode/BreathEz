@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "104531095374",
+    "firebase_url": "https://airqualitymonitoring-e4fac-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "airqualitymonitoring-e4fac",
+    "storage_bucket": "airqualitymonitoring-e4fac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104531095374:android:c6af38e0bcfcd33fd3781f",
+        "android_client_info": {
+          "package_name": "com.airqualitymonitoring.breathez.breathez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104531095374-hseddbd6v2c86vt9fiq2bl1jid3860oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_ZZcbheLhUa2ooT9g1CABxpCvWJ14xtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104531095374-hseddbd6v2c86vt9fiq2bl1jid3860oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
