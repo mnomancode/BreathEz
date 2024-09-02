@@ -3,7 +3,7 @@ flutter_native_splash:
   android: true
  
   android_12: 
-    image: assets/logo.png
+    image: assets/transparent_icon.png
 
 
 
