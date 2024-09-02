@@ -41,6 +41,7 @@ class HomeView extends GetView<HomeController> {
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 10),
               Image.asset('assets/images/rectangle-7.png'),

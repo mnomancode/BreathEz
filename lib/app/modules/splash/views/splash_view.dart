@@ -15,8 +15,8 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 3), () {
-      Get.toNamed(Routes.LOGIN);
+    Future.delayed(const Duration(seconds: 1), () {
+      Get.offAllNamed(Routes.LOGIN);
     });
     super.initState();
   }
@@ -25,7 +25,8 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/transparent_icon.png'),
+        child:
+            Padding(padding: EdgeInsets.symmetric(horizontal: 30), child: Image.asset('assets/transparent_icon.png')),
       ),
     );
   }

@@ -62,12 +62,12 @@ class HomeController extends GetxController {
 
     await for (final _ in controller.stream) {
       // Calculate total concentration
-      double weightedTotal = (coValue / 100) + (co2Value / 100) + (dustValue / 1000);
+      double weightedTotal = (coValue / 100) + (co2Value / 100) + (dustValue / 5000);
 
       // Calculate percentages
-      double coPercentage = ((coValue / 100) / weightedTotal) * 1000;
-      double co2Percentage = ((co2Value / 100) / weightedTotal) * 1000;
-      double dustPercentage = ((dustValue / 1000) / weightedTotal) * 100;
+      double coPercentage = ((coValue / 100) / weightedTotal) * 100;
+      double co2Percentage = ((co2Value / 100) / weightedTotal) * 100;
+      double dustPercentage = ((dustValue / 5000) / weightedTotal) * 100;
 
       yield DataModel(
         co: coPercentage.toStringAsFixed(2),

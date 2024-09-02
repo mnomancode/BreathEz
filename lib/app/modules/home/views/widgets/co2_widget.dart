@@ -12,7 +12,13 @@ class Co2Widget extends StatelessWidget {
         stream: FirebaseDatabase.instance.ref('/2_CO2').onValue,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const CircularProgressIndicator();
+            return Container(
+              alignment: Alignment.centerLeft,
+              margin: const EdgeInsets.symmetric(horizontal: 70),
+              height: 20,
+              width: 20,
+              child: const CircularProgressIndicator(strokeWidth: 1.5),
+            );
           }
           if (snapshot.hasData) {
             return ListTile(
