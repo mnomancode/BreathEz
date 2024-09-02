@@ -1,3 +1,4 @@
+import 'package:breathez/app/modules/home/controllers/home_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,7 @@ class AuthGate extends StatelessWidget {
           return const CircularProgressIndicator();
         }
         if (snapshot.hasData) {
+          Get.put(HomeController());
           return const HomeView();
         }
         return SignInScreen(

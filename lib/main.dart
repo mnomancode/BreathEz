@@ -20,7 +20,7 @@ Future<void> main() async {
   ///
   runApp(
     GetMaterialApp(
-      showSemanticsDebugger: false,
+      debugShowCheckedModeBanner: false,
       title: "Breathez",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
